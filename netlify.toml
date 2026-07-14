@@ -1,16 +1,4 @@
-# Netlify 設定：純靜態網站，發佈根目錄
+# Netlify：Astro 站，build 後發佈 dist
 [build]
-  publish = "."
-
-# 安全標頭（純展示站可依需求調整）
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-
-# 圖片長快取（檔名改版時請換檔名以破快取）
-[[headers]]
-  for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+  command = "npm run build"
+  publish = "dist"
