@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://78ok.com.tw/sitemap.xml
