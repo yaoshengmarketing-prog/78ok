@@ -1,4 +1,0 @@
-# Netlify：Astro 站，build 後發佈 dist
-[build]
-  command = "npm run build"
-  publish = "dist"
